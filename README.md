@@ -25,13 +25,11 @@ EcoSense aims to promote environmental awareness and sustainable living through 
 
 ### Sprint 1: Waste Management Tool (3 weeks)
 
-| Task                                     | Deadline         | Status   |
-| ---------------------------------------- | ---------------- | -------- |
-| Repository setup and sprint planning     | Tuesday (10/10)  | COMPLETE |
-| UI development: input fields and buttons | Friday (10/13)   | PENDING  |
-| Interactive functionality implementation | Tuesday (10/17)  | PENDING  |
-| Collapsible navigation components        | Friday (10/20)   | PENDING  |
-| Social media integration                 | Saturday (10/21) | PENDING  |
+| Task                                | Deadline         | Status      |
+| ----------------------------------- | ---------------- | ----------- |
+| Create organization and set up repo | Monday (03/17)   | COMPLETE    |
+| Code frontend and deploy on Vercel  | Thursday (03/20) | IN PROGRESS |
+| Code back end and connect           | Saturday (03/22) | IN PROGRESS |
 
 ### Sprint 2: Carbon Footprint Calculator (3 weeks)
 
