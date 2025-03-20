@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import WasteQuiz from "./components/WasteQuiz";
 import CarbonCalculator from "./components/CarbonCalculator";
@@ -8,16 +8,7 @@ function App() {
   return (
     <Router>
       <div style={styles.container}>
-        <nav style={styles.navbar}>
-          <h1>EcoSense 🌱</h1>
-          <div style={styles.navLinks}>
-            <Link to="/" style={styles.navLink}>Home</Link>
-            <Link to="/quiz" style={styles.navLink}>Waste Sorting Quiz</Link>
-            <Link to="/calculator" style={styles.navLink}>Carbon Calculator</Link>
-            <Link to="/info" style={styles.navLink}>Info Page</Link>
-          </div>
-        </nav>
-
+        <Navbar />
         <div style={styles.content}>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -30,6 +21,32 @@ function App() {
     </Router>
   );
 }
+
+const Navbar = () => {
+  const [hovered, setHovered] = useState(null);
+
+  return (
+    <nav style={styles.navbar}>
+      <h1>EcoSense 🌱</h1>
+      <div style={styles.navLinks}>
+        {["Home", "Waste Sorting Quiz", "Carbon Calculator", "Info Page"].map((item, index) => {
+          const paths = ["/", "/quiz", "/calculator", "/info"];
+          return (
+            <Link
+              key={index}
+              to={paths[index]}
+              style={hovered === index ? { ...styles.navLink, ...styles.navLinkHover } : styles.navLink}
+              onMouseEnter={() => setHovered(index)}
+              onMouseLeave={() => setHovered(null)}
+            >
+              {item}
+            </Link>
+          );
+        })}
+      </div>
+    </nav>
+  );
+};
 
 const Home = () => (
   <div style={styles.homeContent}>
@@ -54,15 +71,23 @@ const styles = {
     justifyContent: "space-between",
     alignItems: "center",
     color: "white",
+    borderRadius: "20px",
   },
   navLinks: {
     display: "flex",
-    gap: "20px",
+    gap: "15px",
   },
   navLink: {
     textDecoration: "none",
     color: "white",
     fontWeight: "bold",
+    padding: "10px 15px",
+    borderRadius: "10px",
+    transition: "background-color 0.3s ease, transform 0.2s ease",
+  },
+  navLinkHover: {
+    backgroundColor: "#367B39",
+    transform: "scale(1.1)",
   },
   content: {
     padding: "20px",
