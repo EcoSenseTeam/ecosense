@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
 const emissionFactors = {
-  electricity: 0.92, // kg CO2 per kWh (approximate US average)
-  car: 0.404, // kg CO2 per mile (gasoline car)
-  flight: 90, // kg CO2 per hour (average domestic flight)
-  water: 0.18, // kg CO2 per gallon (water treatment emissions)
+  electricity: 0.92,
+  car: 0.404,
+  flight: 90,
+  water: 0.18,
 };
 
-const globalAverage = 4000; // kg CO2 per year (approximate)
+const globalAverage = 4000;
 
 const CarbonCalculator = () => {
   const [inputs, setInputs] = useState({

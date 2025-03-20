@@ -63,6 +63,9 @@ const styles = {
     maxWidth: "1200px",
     margin: "0 auto",
     padding: "20px",
+    minHeight: "100vh",
+    display: "flex", 
+    flexDirection: "column",
   },
   navbar: {
     backgroundColor: "#4CAF50",
@@ -72,6 +75,9 @@ const styles = {
     alignItems: "center",
     color: "white",
     borderRadius: "20px",
+    boxSizing: "border-box",
+    width: "100%", 
+    maxWidth: "1200px", 
   },
   navLinks: {
     display: "flex",
@@ -91,9 +97,17 @@ const styles = {
   },
   content: {
     padding: "20px",
+    boxSizing: "border-box",
   },
   homeContent: {
     marginTop: "40px",
+  },
+  body: {
+    margin: "0",
+    padding: "0",
+    backgroundColor: "#D3D3D3",
+    width: "100vw",
+    overflowX: "hidden",
   },
 };
 
