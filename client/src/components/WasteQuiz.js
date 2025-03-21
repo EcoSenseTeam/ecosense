@@ -3,32 +3,33 @@ import React, { useState } from "react";
 const questions = [
   {
     id: 1,
-    text: "Is it food waste?",
+    text: "Is it a battery, light bulb, or electronic item?",
     options: ["Yes", "No"],
-    next: { Yes: "compost", No: 2 },
+    next: {Yes: "specialCase", No: 2},
   },
   {
     id: 2,
-    text: "Did it come in direct contact with food?",
+    text: "Is it food waste or made from plants (paper, wood, etc)?",
     options: ["Yes", "No"],
-    next: { Yes: 3, No: 4 },
+    next: { Yes: 3, No: 4},
   },
   {
     id: 3,
-    text: "Is it mostly clean or heavily soiled?",
-    options: ["Mostly clean", "Heavily soiled"],
-    next: { "Mostly clean": 4, "Heavily soiled": "trash" },
+    text: "Is it free of plastic or grease?",
+    options: ["Yes", "No"],
+    next: { Yes: "compost", No: "trash"},
   },
   {
     id: 4,
-    text: "What is it made of?",
-    options: ["Aluminum", "Cardboard", "Plastic", "Glass"],
-    next: {
-      Aluminum: "recycle",
-      Cardboard: "recycle",
-      Plastic: "recycle",
-      Glass: "recycle",
-    },
+    text: "Is it plastic, glass, or paper?",
+    options: ["Yes", "No"],
+    next: { Yes: 5, No: "trash" },
+  },
+  {
+    id: 5,
+    text: "Is it clean of food scraps, grease, or non-water beverages?",
+    options: ["Yes", "No"],
+    next: { Yes: "recycle", No: "trash"},
   },
 ];
 
@@ -36,6 +37,7 @@ const results = {
   recycle: "It belongs in the Recycle bin! ♻️",
   compost: "It belongs in the Compost bin! 🌱",
   trash: "It belongs in the Trash bin! 🗑️",
+  specialCase: "Take it to a disposal facility near you! ⚠️"
 };
 
 const WasteQuiz = () => {
