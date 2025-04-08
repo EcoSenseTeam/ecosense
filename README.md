@@ -25,19 +25,30 @@ EcoSense aims to promote environmental awareness and sustainable living through 
 
 ### Sprint 1: Waste Management Tool (3 weeks)
 
-| Task                               | Deadline         | Status   |
-| ---------------------------------- | ---------------- | -------- |
-| Finish project proposal            | Friday (02/21)   | COMPLETE |
-| Setup GitHub organization and repo | Saturday (02/22) | COMPLETE |
-| Code frontend and push             | Tuesday (03/25)  | COMPLETE |
+| Task                               | Deadline         | Status      |
+| ---------------------------------- | ---------------- | ----------- |
+| Finish project proposal            | Friday (02/21)   | COMPLETE    |
+| Setup GitHub organization and repo | Saturday (02/22) | COMPLETE    |
+| Code frontend and push             | Tuesday (02/25)  | COMPLETE    |
+| Finish sprint 1 report             | Tuesday (04/08)  | IN PROGRESS |
 
 ### Sprint 2: Carbon Footprint Calculator (3 weeks)
 
-_Detailed tasks to be added after Sprint 1 completion_
+| Task       | Deadline   | Status     |
+| ---------- | ---------- | ---------- |
+| Loading... | Loading... | Loading... |
+| Loading... | Loading... | Loading... |
+| Loading... | Loading... | Loading... |
+| Loading... | Loading... | Loading... |
 
 ### Sprint 3: Informational Resources (2-3 weeks)
 
-_Detailed tasks to be added after Sprint 2 completion_
+| Task       | Deadline   | Status     |
+| ---------- | ---------- | ---------- |
+| Loading... | Loading... | Loading... |
+| Loading... | Loading... | Loading... |
+| Loading... | Loading... | Loading... |
+| Loading... | Loading... | Loading... |
 
 ## 🛠️ Technology Stack
 
@@ -51,7 +62,7 @@ _Detailed tasks to be added after Sprint 2 completion_
 - Node.js - JavaScript runtime environment
 - _Additional technologies to be determined_
 
-## 🔗 Development Resources
+## 🔗 Development Sources
 
 - [Creating your first React application](https://react.dev/learn/creating-a-react-app)
 - [Getting started with Node.js](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs)
