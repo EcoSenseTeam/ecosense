@@ -1,75 +1,94 @@
-# 🌿 EcoSense - Environmental Awareness Web Application
+# EcoSense 🌱
 
-A web-based application designed to educate users about sustainable living and eco-friendly habits through interactive tools and resources.
+A React application designed to help users learn about environmental sustainability through interactive tools.
 
-## 👥 Team Members
+## Project Overview
 
-| Role               | Name         |
-| ------------------ | ------------ |
-| Frontend Developer | David Song   |
-| Frontend Developer | Mithi Pandey |
-| Backend Developer  | Shreya Raj   |
-| Backend Developer  | Erica Xue    |
+EcoSense is a web application that helps users understand their environmental impact through:
 
-## 🌟 Project Overview
+- A waste sorting quiz to learn proper disposal methods
+- A carbon footprint calculator
+- Educational resources and eco-friendly tips
 
-EcoSense aims to promote environmental awareness and sustainable living through interactive and educational features. Our application provides tools for waste management education, carbon footprint calculation, and informational resources on eco-friendly practices.
+## Project Timeline
 
-### Key Features
+### Sprint 1: Frontend Development
 
-1. **Waste Management Interactive Tool** - An educational quiz to help users learn proper waste sorting techniques
-2. **Carbon Footprint Calculator** - A tool that incorporates water usage, energy consumption, and travel habits
-3. **Environmental Resources** - Daily eco-tips and curated guides to sustainable products and practices
+| Task                                         | Due Date       | Progress     |
+| -------------------------------------------- | -------------- | ------------ |
+| Project setup with Create React App          | March 18, 2025 | ✅ Completed |
+| Basic navigation structure with React Router | March 20, 2025 | ✅ Completed |
+| Home page layout and design                  | March 25, 2025 | ✅ Completed |
+| Waste Quiz component UI design               | March 29, 2025 | ✅ Completed |
+| Carbon Calculator component UI design        | April 3, 2025  | ✅ Completed |
+| Info Page component UI design                | April 5, 2025  | ✅ Completed |
+| Responsive styling                           | April 7, 2025  | ✅ Completed |
 
-## 📅 Sprint Timeline
+### Sprint 2: Functionality Implementation
 
-### Sprint 1: Waste Management Tool (3 weeks)
+| Task                                    | Due Date       | Progress       |
+| --------------------------------------- | -------------- | -------------- |
+| Waste Quiz backend logic                | April 12, 2025 | 🔄 In Progress |
+| Carbon Calculator computation functions | April 16, 2025 | ⏳ Not Started |
+| Dynamic tips for Info Page              | April 20, 2025 | ⏳ Not Started |
+| Form validation                         | April 23, 2025 | ⏳ Not Started |
+| User input handling                     | April 26, 2025 | ⏳ Not Started |
+| Unit testing                            | April 29, 2025 | ⏳ Not Started |
 
-| Task                               | Deadline         | Status      |
-| ---------------------------------- | ---------------- | ----------- |
-| Finish project proposal            | Friday (02/21)   | COMPLETE    |
-| Setup GitHub organization and repo | Saturday (02/22) | COMPLETE    |
-| Code frontend and push             | Tuesday (02/25)  | COMPLETE    |
-| Finish sprint 1 report             | Tuesday (04/08)  | IN PROGRESS |
+### Sprint 3: Enhancement & Deployment
 
-### Sprint 2: Carbon Footprint Calculator (3 weeks)
+| Task                         | Due Date     | Progress       |
+| ---------------------------- | ------------ | -------------- |
+| Add more quiz questions      | May 5, 2025  | ⏳ Not Started |
+| Expand calculator metrics    | May 9, 2025  | ⏳ Not Started |
+| Add visualizations           | May 14, 2025 | ⏳ Not Started |
+| Results saving functionality | May 17, 2025 | ⏳ Not Started |
+| Final testing                | May 20, 2025 | ⏳ Not Started |
+| Deployment                   | May 21, 2025 | ⏳ Not Started |
 
-| Task       | Deadline   | Status     |
-| ---------- | ---------- | ---------- |
-| Loading... | Loading... | Loading... |
-| Loading... | Loading... | Loading... |
-| Loading... | Loading... | Loading... |
-| Loading... | Loading... | Loading... |
+## Available Scripts
 
-### Sprint 3: Informational Resources (2-3 weeks)
+In the project directory, you can run:
 
-| Task       | Deadline   | Status     |
-| ---------- | ---------- | ---------- |
-| Loading... | Loading... | Loading... |
-| Loading... | Loading... | Loading... |
-| Loading... | Loading... | Loading... |
-| Loading... | Loading... | Loading... |
+### `npm start`
 
-## 🛠️ Technology Stack
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Front-End
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-- [React.js](https://react.dev/) - JavaScript library for building user interfaces
-- HTML5/CSS3 - Structure and styling
+### `npm test`
 
-### Back-End
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- Node.js - JavaScript runtime environment
-- _Additional technologies to be determined_
+### `npm run build`
 
-## 🔗 Development Sources
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- [Creating your first React application](https://react.dev/learn/creating-a-react-app)
-- [Getting started with Node.js](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs)
-- [Interactive UI design principles](https://www.interaction-design.org/literature/topics/ui-design)
+## Project Dependencies
 
-## 📊 User Research Highlights
+- React 19.0.0
+- React Router 7.4.0
+- React DOM 19.0.0
 
-- 65% of survey respondents preferred a holistic app covering multiple sustainability topics
-- 40% showed specific interest in waste management education
-- Users indicated interest in carbon footprint tracking related to energy usage and transportation
+## Team Members
+
+- Alex
+- Jaime
+- Taylor
+- Casey
+
+## Setup Instructions
+
+1. Clone the repository
+2. Run `npm install` to install dependencies
+3. Run `npm start` to start the development server
+4. Open [http://localhost:3000](http://localhost:3000) to view the app
+
+## Learning Resources
+
+- [React Documentation](https://reactjs.org/)
+- [React Router Documentation](https://reactrouter.com/)
