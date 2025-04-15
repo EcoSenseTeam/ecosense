@@ -14,10 +14,10 @@ const tips = [
 ];
 
 const resources = [
-  { name: "How to Recycle Correctly", link: "https://www.epa.gov/recycle" },
-  { name: "Sustainable Living Tips", link: "https://www.greenpeace.org/usa/sustainable-living/" },
-  { name: "Eco-Friendly Product Directory", link: "https://www.ecowatch.com/eco-friendly-products" },
-  { name: "Guide to Composting at Home", link: "https://www.nrdc.org/stories/composting-way-easy" },
+  { name: "How to Recycle Correctly", link: "https://www.epa.gov/recycle/how-do-i-recycle-common-recyclables" },
+  { name: "Sustainable Living Tips", link: "https://www.goodgoodgood.co/articles/green-living-websites" },
+  { name: "Eco-Friendly Product Directory", link: "https://spot.ul.com/" },
+  { name: "Guide to Composting at Home", link: "https://www.epa.gov/recycle/composting-home" },
   { name: "Sustainable Fashion Brands", link: "https://goodonyou.eco/" }
 ];
 
