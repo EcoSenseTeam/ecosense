@@ -42,8 +42,9 @@ const CarbonCalculator = () => {
     <div style={styles.content}>
       <h2>Carbon Footprint Calculator</h2>
       <div style={styles.form}>
-        <label>Electricity Usage (kWh/month):</label>
+        <label htmlFor="electricity">Electricity Usage (kWh/month):</label>
         <input
+          id="electricity"
           type="number"
           name="electricity"
           value={inputs.electricity}
@@ -51,8 +52,9 @@ const CarbonCalculator = () => {
           style={styles.input}
         />
 
-        <label>Car Travel (miles/month):</label>
+        <label htmlFor="car" >Car Travel (miles/month):</label>
         <input
+          id="car"
           type="number"
           name="car"
           value={inputs.car}
@@ -60,8 +62,9 @@ const CarbonCalculator = () => {
           style={styles.input}
         />
 
-        <label>Flight Travel (hours/year):</label>
+        <label htmlFor="flight">Flight Travel (hours/year):</label>
         <input
+          id="flight"
           type="number"
           name="flight"
           value={inputs.flight}
@@ -69,8 +72,9 @@ const CarbonCalculator = () => {
           style={styles.input}
         />
 
-        <label>Water Usage (gallons/day):</label>
+        <label htmlFor="water">Water Usage (gallons/day):</label>
         <input
+          id="water"
           type="number"
           name="water"
           value={inputs.water}
