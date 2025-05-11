@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import PieChart from "./PieChart"; 
+
 const emissionFactors = {
   electricity: 0.92,
   car: 0.404,
@@ -18,25 +20,59 @@ const CarbonCalculator = () => {
   });
 
   const [footprint, setFootprint] = useState(null);
+  const [breakdown, setBreakdown] = useState(null);
+
 
   const handleChange = (e) => {
     setInputs({ ...inputs, [e.target.name]: e.target.value });
   };
 
-  const calculateFootprint = () => {
-    const total =
-      (inputs.electricity * emissionFactors.electricity || 0) +
-      (inputs.car * emissionFactors.car || 0) +
-      (inputs.flight * emissionFactors.flight || 0) +
-      (inputs.water * emissionFactors.water || 0);
+  // initially trying to do display of graphic pie chart through a server.js file --> then a 
+  // python file that would later generate a json file
+  
+  // const sendToBackend = async (values) => {
+  //   try {
+  //     const res = await fetch("http://localhost:5000/api/save-data", {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/json" },
+  //       body: JSON.stringify({ values }),
+  //     });
 
+  //     const data = await res.json();
+  //     console.log("Backend says:", data.message);
+  //   } catch (error) {
+  //     console.error("Failed to send data to backend:", error);
+  //   }
+  // };
+
+  const calculateFootprint = () => {
+    const electricity = parseFloat(inputs.electricity) || 0;
+    const car = parseFloat(inputs.car) || 0;
+    const flight = parseFloat(inputs.flight) || 0;
+    const water = parseFloat(inputs.water) || 0;
+  
+    const total =
+      electricity * emissionFactors.electricity +
+      car * emissionFactors.car +
+      flight * emissionFactors.flight +
+      water * emissionFactors.water;
+  
     setFootprint(total.toFixed(2));
+
+    setBreakdown({
+      electricity: electricity * emissionFactors.electricity,
+      car: car * emissionFactors.car,
+      flight: flight * emissionFactors.flight,
+      water: water * emissionFactors.water,
+    });
   };
+  
 
   const resetCalculator = () => {
     setInputs({ electricity: "", car: "", flight: "", water: "" });
     setFootprint(null);
   };
+
 
   return (
     <div style={styles.content}>
@@ -103,6 +139,15 @@ const CarbonCalculator = () => {
               : "Your footprint is below average. Great job!"}
           </p>
         </div>
+        
+      )}
+      {breakdown && (
+        <PieChart
+              electricity={breakdown.electricity}
+              car={breakdown.car}
+              flight={breakdown.flight}
+              water={breakdown.water}
+        />
       )}
     </div>
   );
