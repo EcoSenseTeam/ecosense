@@ -24,4 +24,13 @@
 
 
 # Instructions for project setup and initiation:
-xxx
+1. Type the command "git clone https://github.com/EcoSenseTeam/ecosense.git"
+  - If you already have the repo locally, use "git pull origin main"
+2. Move into project directory with command "cd ecosense"
+3. Run "npm install" in both the client and server folders
+  - cd into each subdirectory: "source code" -> client and "source code" -> server
+  - This installs all dependencies listed in the package.json files
+4. Run "npm start" to initiate the project
+  - First run in the server subfolder, and then in client
+  - Server will run on port 5001, client on localhost:3000
+5. A browser window will open the web application, and the application is running!
