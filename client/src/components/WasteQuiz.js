@@ -103,5 +103,5 @@ const styles = {
     width: "80%",
   },
 };
-
+   
 export default WasteQuiz;
